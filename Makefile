@@ -11,5 +11,5 @@ build: deps
 	./hugo
 
 deploy: build
-	echo $(CNAME) > output/CNAME
+	echo $(CNAME) > public/CNAME
 	(cd public; git init . ; git add . ; git commit -n 'Automated push' ; git push -f git@github.com:mysql-be/mysql-be.github.io)
