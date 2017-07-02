@@ -1,9 +1,16 @@
 baseURL = "http://mysqlusers.be/"
 languageCode = "en-us"
-title = "MySQL & Friends Belgium"
+title = "MySQL & Friends Belgian Users"
 theme = "cocoa-eh"
 
 [params]
 dateform = "Jan 2, 2006"
 dateformfull = "Mon Jan 2 2006 15:04:05 MST"
 logofile = "img/logo.png"
+github = "mysql-be"
+twitter = "MySQL_BE"
+lang = "en"
+highlightjs = true
+progressively = true
+description = "Belgian Users Group for MySQL and Friends database technologies"
+posts_navigation = true
