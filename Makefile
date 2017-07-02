@@ -14,4 +14,5 @@ deploy: build
 	git config --global user.email "noreply@mysqlusers.be"
 	git config --global user.name "Travis CI"
 	echo $(CNAME) > public/CNAME
+	touch public/.nojekyll
 	(cd public; git init . ; git add . ; git commit -m 'Automated push' ; git push -f git@github.com:mysql-be/mysql-be.github.io master)
