@@ -1,6 +1,6 @@
 ---
-title: "Welcome"
-date: 2017-07-02T16:44:43+02:00
+title: "Home"
+date: 2017-07-02T16:50:12+02:00
 ---
 
 Welcome to the MySQL and Friends Belgian Users Group!

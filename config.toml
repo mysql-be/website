@@ -14,3 +14,4 @@ highlightjs = true
 progressively = true
 description = "Belgian Users Group for MySQL and Friends database technologies"
 posts_navigation = true
+latestpostcount = 5

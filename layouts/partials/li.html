@@ -1,0 +1,4 @@
+<li class="post-item">
+    <span class="meta">{{ .Date.Format .Site.Params.dateform }}</span>
+    <a href="{{ .Permalink }}"><span{{if gt .Date.Unix now.Unix }} style="font-weight: bold"{{end}}>{{ .Title }}</span></a>
+</li>

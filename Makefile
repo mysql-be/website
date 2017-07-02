@@ -7,10 +7,16 @@ deps:
 	wget -c -O hugo-$(HUGO_VERSION).tar.gz https://github.com/gohugoio/hugo/releases/download/v$(HUGO_VERSION)/hugo_$(HUGO_VERSION)_Linux-64bit.tar.gz
 	tar xvf hugo-$(HUGO_VERSION).tar.gz hugo
 
-build: deps
+build-deps: deps
 	./hugo
 
-deploy: build
+clean:
+	rm -rf public
+
+build: clean
+	./hugo
+
+deploy: build-deps
 	git config --global user.email "noreply@mysqlusers.be"
 	git config --global user.name "Travis CI"
 	echo $(CNAME) > public/CNAME
