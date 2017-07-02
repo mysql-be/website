@@ -12,4 +12,4 @@ build: deps
 
 deploy: build
 	echo $(CNAME) > public/CNAME
-	(cd public; git init . ; git add . ; git commit -n 'Automated push' ; git push -f git@github.com:mysql-be/mysql-be.github.io)
+	(cd public; git init . ; git add . ; git commit -m 'Automated push' ; git push -f git@github.com:mysql-be/mysql-be.github.io master)
